@@ -14,9 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <DamageOnCollision>k__BackingField: 1
   ObjectGroups:
-  - <Type>k__BackingField: 1
+  - <Type>k__BackingField: 0
     <Objects>k__BackingField:
     - {fileID: 1207392628590953613, guid: 029d6eae32a1b69479da4919fea0e7df, type: 3}
-  - <Type>k__BackingField: 2
+  - <Type>k__BackingField: 1
     <Objects>k__BackingField:
     - {fileID: 1207392628590953613, guid: 9fbdd5bacd7603448aa08fa451b5b227, type: 3}

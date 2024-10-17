@@ -403,11 +403,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyStorage: {fileID: 11400000, guid: 0af4be7ae2373814d9ecf424aadbf7bb, type: 2}
   enemies:
-  - <Type>k__BackingField: 1
+  - <Type>k__BackingField: 0
     <SpawnUnitsOnStart>k__BackingField: 8
     <SpawnCooldown>k__BackingField: 2
     <EnemiesPool>k__BackingField: []
-  - <Type>k__BackingField: 2
+  - <Type>k__BackingField: 1
     <SpawnUnitsOnStart>k__BackingField: 2
     <SpawnCooldown>k__BackingField: 8
     <EnemiesPool>k__BackingField: []
