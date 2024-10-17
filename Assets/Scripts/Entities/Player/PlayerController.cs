@@ -25,7 +25,6 @@ namespace CodeBase.Player
         [SerializeField] private PopUp popUp;
         [SerializeField] private GameObject body;
         [SerializeField] private Collider2D playerCollider;
-        [SerializeField] private ParticleType explosionEffect;
         [SerializeField] private float explosionAdditionalScale;
         [SerializeField] private Rigidbody2D playerBody;
         [SerializeField] private SpriteRenderer skinRenderer;

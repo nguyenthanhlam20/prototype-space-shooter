@@ -108,7 +108,6 @@ namespace CodeBase.Player
             if (freeProjectile == null)
                 freeProjectile = CreateNewProjectile();
 
-            Debug.Log(freeProjectile);
             return freeProjectile;
         }
 

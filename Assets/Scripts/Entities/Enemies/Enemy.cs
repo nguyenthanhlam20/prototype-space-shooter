@@ -17,7 +17,6 @@ namespace CodeBase.Mobs
         [SerializeField] protected EnemyStorage enemyStorage;
 
         [field: Header("Parent Class Settings")]
-        [SerializeField] private ParticleType explosionEffect;
         [SerializeField] private float explosionAdditionalScale;
         [SerializeField] private SpriteRenderer skinRenderer;
         [SerializeField] private PopUp popUp;
@@ -27,13 +26,15 @@ namespace CodeBase.Mobs
         [field: SerializeField] public float Score { get; private set; }
         [field: SerializeField] public bool IsBusy { get; private set; }
 
-        private Color defaultColor;
-        private Tween skinColorTween;
-        private float currentHealth;
         protected ParticlePool particlePool;
 
         [Inject]
         private void Construct(ParticlePool pool) => particlePool = pool;
+
+
+        private Color defaultColor;
+        private Tween skinColorTween;
+        private float currentHealth;
 
         private void Start() => defaultColor = skinRenderer.color;
 

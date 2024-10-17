@@ -1,6 +1,5 @@
 using System;
 using UnityEngine;
-using static CodeBase.Utils.Enums;
 
 namespace CodeBase.Utils
 {
@@ -23,7 +22,6 @@ namespace CodeBase.Utils
         public static Action OnLevelProgressChanged;
         public static Action OnGameRestarted;
         public static Action OnGameOver;
-        public static Action<CollectableType> OnCollectableGot;
 
         [Header("Touch events")]
         public static Action<bool> OnStartMoving;

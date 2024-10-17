@@ -38,29 +38,18 @@ namespace CodeBase.Mobs
             transform.rotation = Quaternion.Euler(0f, 0f, 180f);
 
             moveCoroutine = StartCoroutine(StartMove());
-
-            EventObserver.OnPlayerDied += ChangeBehaviour;
         }
 
         private void OnDisable()
         {
             moveCoroutine = null;
             shootingCoroutine = null;
-
-            EventObserver.OnPlayerDied -= ChangeBehaviour;
-
-            //GetPlayerDirection();
-            //transform.rotation = Quaternion.Euler(0, 0, zAngle);
         }
-
-        //private void LookOnPlayerImmediate() => transform.rotation = Quaternion.Euler(0, 0, _zAngle);
 
         private void GetPlayerDirection()
         {
             Vector3 direction = playerController.transform.position - transform.position;
             zAngle = Mathf.Atan2(direction.normalized.y, direction.normalized.x) * Mathf.Rad2Deg - 90;
-
-            //calculate rotation
             Quaternion desiredRotation = Quaternion.Euler(0, 0, zAngle);
             transform.rotation = Quaternion.RotateTowards(transform.rotation, desiredRotation, rotationSpeed * Time.deltaTime);
         }
@@ -125,13 +114,6 @@ namespace CodeBase.Mobs
             newProjectile.SetDamage(shipDamage);
 
             return newProjectile;
-        }
-
-        private void ChangeBehaviour()
-        {
-            ////StopCoroutine(moveCoroutine);
-            //StopCoroutine(shootingCoroutine); 
-            //shootingCoroutine = null;
         }
 
         private void OnTriggerStay2D(Collider2D collision)

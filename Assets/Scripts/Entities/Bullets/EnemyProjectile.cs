@@ -10,7 +10,7 @@ namespace CodeBase.ObjectBased
 
         protected override void OnTriggerEnter2D(Collider2D collision)
         {
-            if (collision.gameObject.tag.Equals(Tags.Player) || collision.gameObject.tag.Equals(Tags.Shield))
+            if (collision.gameObject.tag.Equals(Tags.Player))
                 SetBusyState(false);
         }
     }

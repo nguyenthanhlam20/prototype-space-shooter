@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 2019322824889001265}
   - component: {fileID: 2019322824889001422}
   - component: {fileID: 2949682331513542019}
-  - component: {fileID: 8778268690185338860}
   - component: {fileID: 2019322824889001423}
   m_Layer: 0
   m_Name: GameCamera
@@ -91,21 +90,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <MainCamera>k__BackingField: {fileID: 2019322824889001422}
-  colorOnHit: {r: 0.46226418, g: 0.46226418, b: 0.46226418, a: 1}
-  colorOnBombExplosion: {r: 0.8773585, g: 0.67957294, b: 0.30955854, a: 1}
-  effectDuration: 0.35
---- !u!114 &8778268690185338860
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2019322824889001421}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 21ff7f135ca1a444e93c2d3b753bea99, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &2019322824889001423
 MonoBehaviour:
   m_ObjectHideFlags: 0

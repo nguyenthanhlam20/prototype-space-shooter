@@ -20,7 +20,7 @@ namespace CodeBase.Effects
         [field: SerializeField] public Transform PopUpContainer { get; private set; }
 
         [Header("Particles")]
-        [SerializeField] private List<ParticleObject> objects = new List<ParticleObject>();
+        [SerializeField] private List<ParticleObject> objects = new ();
         [field: SerializeField] public Transform ParticleContainer { get; private set; }
 
         public ParticleObject GetFreeObject(ParticleType type)
